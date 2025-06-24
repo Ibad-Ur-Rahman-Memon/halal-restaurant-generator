@@ -1,42 +1,86 @@
 # 🍽️ Halal Restaurant Name Generator
 
-An AI-powered web application that generates unique halal restaurant names and traditional halal menu items inspired by Islamic countries. Built using **Python**, **Streamlit**, and **LangChain** with OpenAI's LLM.
+An AI-powered web app built with **Streamlit** and **LangChain** that generates creative halal restaurant names and traditional menu items based on selected Islamic countries.
 
 ---
 
-## 🌟 Features
+## 🧠 How It Works
 
-- 🔮 AI-generated **restaurant names** based on selected Islamic countries
-- 🍛 Custom **halal menu items** for each generated restaurant
-- 🌐 Clean and interactive **web interface** using Streamlit
-- 🔐 Secure handling of OpenAI API key via `.env` file
-- 🕌 Cultural focus on **Islamic cuisine and heritage**
-
----
-
-## 🖼️ Demo Preview
-
-> Coming Soon (Add screenshots or a demo video link here)
+1. Choose an Islamic country from the sidebar.
+2. The AI generates:
+   - A creative restaurant name inspired by that country’s culture.
+   - A traditional halal menu list.
+3. View the result instantly!
 
 ---
 
-## 🏗️ Tech Stack
+## 🛠️ Technologies Used
 
-| Tool / Library     | Description                                 |
-|--------------------|---------------------------------------------|
-| [Streamlit](https://streamlit.io/)         | Frontend web framework (UI)              |
-| [LangChain](https://www.langchain.com/)    | LLM orchestration and prompt chaining    |
-| [OpenAI API](https://platform.openai.com/) | Large Language Model generation          |
-| [Python](https://www.python.org/)          | Backend logic and data flow              |
-| [dotenv](https://pypi.org/project/python-dotenv/) | Secure environment variable management |
+- Python
+- Streamlit
+- LangChain
+- OpenAI API (via `.env`)
+- dotenv
 
 ---
 
-## 🚀 How to Run Locally
+## 📁 Project Structure
 
-### 1. Clone the Repository
+halal-restaurant-generator/
+├── main.py
+├── langchain_helper.py
+├── requirements.txt
+├── .env # Not included in repo
+├── .gitignore
+├── README.md
+└── assets/ # ( screenshots)
+
+---
+
+## 📷 App Preview
+
+### 🌐 Country Selection Sidebar
+![Screenshot 1](assets/Screenshot_1.png)
+
+### When Pakistan Country Selected
+![Screenshot 2](assets/Screenshot_2.png)
+
+### When Morocco Country Selected
+![Screenshot 3](assets/Screenshot_3.png)
+
+### When Qatar Country Selected
+![Screenshot 4](assets/Screenshot_4.png)
+
+### When Iran Country Selected 
+![Screenshot 5](assets/Screenshot_5.png)
+
+
+## 📦 Installation & Run
 
 ```bash
-git clone https://github.com/yourusername/halal-restaurant-name-generator.git
-cd halal-restaurant-name-generator
+git clone https://github.com/YOUR-USERNAME/halal-restaurant-generator.git
+cd halal-restaurant-generator
 
+# Setup virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Add your OpenAI API key to .env
+echo "OPENAI_API_KEY=your_api_key_here" > .env
+
+# Run the app
+streamlit run main.py
+
+---
+🌍 Islamic Countries Included
+Pakistan, Turkey, Indonesia, Saudi Arabia, Morocco, Egypt, Malaysia, Iran, Iraq, Bangladesh, Algeria, Qatar, Jordan, UAE, Afghanistan
+
+🙋 Developed By
+Ibad Ur Rahman Memon
+GitHub Profile
+
+🔐 License
+MIT License © 2025 Ibad Ur Rahman Memon

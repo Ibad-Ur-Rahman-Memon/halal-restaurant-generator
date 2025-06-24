@@ -1,13 +1,5 @@
 .env
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
-.Python
-env/
-venv/
+.venv/
 .idea/
-.vscode/
-.DS_Store
-*.egg-info/
+*.pyc
